@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m_zito_main_page"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_layout"
+        android:padding="@dimen/padding_small">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="@color/wyttext"
+                android:hint="@string/hint_name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/wyttext"
+                android:hint="@string/hint_email"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/wyttext"
+                android:hint="@string/hint_password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/registerbtn"
+            android:textSize="@dimen/btn_txt"
+            android:background="@color/btncolor"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/wyttext"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

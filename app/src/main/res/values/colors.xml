@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="drktoolbar">#1b1b1b</color>
+    <color name="lyttoolbar">#6d6d6d</color>
+    <color name="opacitylyttoolbar">#DD6d6d6d</color>
+    <color name="relaview">#1b1b1b</color>
+    <color name="opacityrelaview">#DD1b1b1b</color>
+    <color name="wyttext">#FFFFFF</color>
+    <color name="blktext">#000000</color>
+    <color name="customtext">#000000</color>
+    <color name="btncolor">#7B1FA2</color>
+    <color name="lytbtncolor">#9C27B0</color>
+    <color name="opacitybtncolor">#AA7b1fa2</color>
+
+    <color name="bordercolor">#4A148C</color>
+    <color name="opacitybordercolor">#DD4A148C</color>
+
+    <!--CardView-->
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#7b1fa2</color>
+    <color name="opacity_album_title">#AA4A148C</color>
+
+    <!--TabbedPane-->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+</resources>

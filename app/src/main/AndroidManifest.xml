@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dijonkariz.m_zito_hq">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyMaterialTheme" />
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".landing_page"
+            android:label="@string/title_activity_landing_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Edit Profile-->
+        <activity android:name=".edit_profile"
+            android:theme="@style/MyMaterialTheme"/>
+        <!--Workout Session-->
+        <activity android:name=".workout_session"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <!--&lt;!&ndash;Record Session&ndash;&gt;-->
+        <!--<activity android:name=".Record_Wrkout"-->
+            <!--android:theme="@style/MyMaterialTheme"></activity>-->
+        <!--&lt;!&ndash;Past Sessions&ndash;&gt;-->
+        <!--<activity android:name=".Past_Wrkout"-->
+            <!--android:theme="@style/MyMaterialTheme"></activity>-->
+        <!--&lt;!&ndash;Add Workout Session&ndash;&gt;-->
+        <!--<activity android:name=".Add_Wrkout"-->
+            <!--android:theme="@style/MyMaterialTheme"></activity>-->
+        <!--&lt;!&ndash;Diet Planning&ndash;&gt;-->
+        <!--<activity android:name=".Diet_Plan_Wrkout"-->
+            <!--android:theme="@style/MyMaterialTheme"></activity>-->
+    </application>
+
+</manifest>

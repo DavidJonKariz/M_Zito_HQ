@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/m_zito_main_page"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relaheight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/opacityrelaview">
+
+        <TextView
+            android:id="@+id/welcomu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/welcomu_textview"
+            android:textColor="@color/wyttext"
+            app:fontFamily="@font/cinzel_bold"
+            android:text="@string/app_name"/>
+
+        <Button
+            android:id="@+id/loginbtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btnheight"
+
+            android:layout_marginLeft="@dimen/main_margin_left"
+            android:layout_marginStart="@dimen/main_margin_left"
+            android:layout_below="@+id/welcomu"
+
+            android:textColor="@color/wyttext"
+            android:textSize="@dimen/btn_txt"
+
+            android:onClick="login"
+            android:text="@string/loginbtn"/>
+
+        <Button
+            android:id="@+id/regbtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btnheight"
+
+            android:layout_below="@+id/welcomu"
+            android:layout_toRightOf="@+id/loginbtn"
+            android:layout_toEndOf="@+id/loginbtn"
+
+            android:textColor="@color/wyttext"
+            android:textSize="@dimen/btn_txt"
+
+            android:onClick="register"
+            android:text="@string/registerbtn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
