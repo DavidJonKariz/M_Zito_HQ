@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
@@ -68,22 +69,22 @@ public class landing_page extends AppCompatActivity {
                 R.drawable.card_5_woman_motivation,
                 R.drawable.card_11_workouts};
 
-        Option a = new Option("Record Session", 13, covers[0]);
+        Option a = new Option(getString(R.string.landing_record_session), 13, covers[0]);
         optionList.add(a);
 
-        a = new Option("Gym Location", 8, covers[1]);
+        a = new Option(getString(R.string.landing_gym_location), 8, covers[1]);
         optionList.add(a);
 
-        a = new Option("Gym Trainer", 11, covers[2]);
+        a = new Option(getString(R.string.landing_gym_trainer), 11, covers[2]);
         optionList.add(a);
 
-        a = new Option("Diet Plan", 12, covers[3]);
+        a = new Option(getString(R.string.landing_diet_plan), 12, covers[3]);
         optionList.add(a);
 
-        a = new Option("Past Workouts", 14, covers[4]);
+        a = new Option(getString(R.string.landing_past_workouts), 14, covers[4]);
         optionList.add(a);
 
-        a = new Option("Add  Workout", 1, covers[5]);
+        a = new Option(getString(R.string.landing_add_workouts), 1, covers[5]);
         optionList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -145,6 +146,12 @@ public class landing_page extends AppCompatActivity {
                 startActivity(intent);
             case R.id.action_edit_goals:
                 return true;
+            case R.id.action_language:
+                Intent languageIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(languageIntent);
+                return true;
+                default:
+                    //Do Nothing
         }
 
         return super.onOptionsItemSelected(item);

@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
 
                 android:textColor="@color/wyttext"
-                android:hint="Record"
+                android:hint="@string/workout_record_statement"
                 android:inputType="text"
                 android:gravity="center"/>
         </android.support.design.widget.TextInputLayout>

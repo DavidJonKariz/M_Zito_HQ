@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/drktoolbar</item>
         <item name="colorAccent">@color/btncolor</item>
         <item name="android:textColorHint">@color/wyttext</item>
+        <item name="textColorError">@color/textInputErrorColor</item>
     </style>
 
     <style name="MainActivityTheme" parent="AppTheme">

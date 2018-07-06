@@ -10,12 +10,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     private EditText inputUserame, inputUpassword;
     private TextInputLayout inputLayoutUname, inputLayoutUpassword;
     private Button btnSignIn;
+    private TextView to_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class Login extends AppCompatActivity {
         inputUpassword = (EditText) findViewById(R.id.login_password);
         //Button
         btnSignIn = (Button) findViewById(R.id.btn_login);
+        //TextViews
+        to_register = (TextView) findViewById(R.id.to_register);
 
         inputUserame.addTextChangedListener(new Login.MyLoginTextWatcher(inputUserame));
         inputUpassword.addTextChangedListener(new Login.MyLoginTextWatcher(inputUpassword));
@@ -38,6 +42,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 submitForm();
+            }
+        });
+        //To the Register
+        to_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
     }

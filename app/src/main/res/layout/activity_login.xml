@@ -27,6 +27,11 @@
                 android:id="@+id/login_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
+                android:drawableLeft="@drawable/username_login"
+                android:drawableStart="@drawable/username_login"
+                android:drawablePadding="5dp"
+
                 android:singleLine="true"
                 android:inputType="text"
                 android:textColor="@color/wyttext"
@@ -38,12 +43,21 @@
             android:id="@+id/login_txt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
             android:layout_margin="@dimen/margin_small">
 
             <EditText
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
+                android:drawableLeft="@drawable/userpassword"
+                android:drawableStart="@drawable/userpassword"
+
+                android:drawableRight="@drawable/icon_hide_eye"
+                android:drawableEnd="@drawable/icon_hide_eye"
+                android:drawablePadding="5dp"
+
                 android:inputType="textPassword"
                 android:textColor="@color/wyttext"
                 android:hint="@string/login_enter_your_password"/>
@@ -58,6 +72,18 @@
             android:textSize="@dimen/btn_txt"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_margin="10dp"
+            android:textColor="@color/wyttext"/>
+
+        <TextView
+            android:id="@+id/to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="200dp"
+
+            android:text="@string/already_signed"
+            android:textSize="6pt"
             android:textColor="@color/wyttext"/>
 
     </LinearLayout>

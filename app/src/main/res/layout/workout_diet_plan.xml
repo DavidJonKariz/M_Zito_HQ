@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
 
                 android:textColor="@color/wyttext"
-                android:hint="Diet"
+                android:hint="@string/workout_diet_statement"
                 android:inputType="text"
                 android:gravity="center"/>
         </android.support.design.widget.TextInputLayout>

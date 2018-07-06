@@ -9,8 +9,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".Mzito_App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -40,24 +42,26 @@
             android:name=".landing_page"
             android:label="@string/title_activity_landing_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--Edit Profile-->
-        <activity android:name=".edit_profile"
-            android:theme="@style/MyMaterialTheme"/>
-        <!--Workout Session-->
-        <activity android:name=".workout_session"
-            android:theme="@style/MyMaterialTheme"></activity>
-        <!--&lt;!&ndash;Record Session&ndash;&gt;-->
-        <!--<activity android:name=".Record_Wrkout"-->
-            <!--android:theme="@style/MyMaterialTheme"></activity>-->
-        <!--&lt;!&ndash;Past Sessions&ndash;&gt;-->
-        <!--<activity android:name=".Past_Wrkout"-->
-            <!--android:theme="@style/MyMaterialTheme"></activity>-->
-        <!--&lt;!&ndash;Add Workout Session&ndash;&gt;-->
-        <!--<activity android:name=".Add_Wrkout"-->
-            <!--android:theme="@style/MyMaterialTheme"></activity>-->
-        <!--&lt;!&ndash;Diet Planning&ndash;&gt;-->
-        <!--<activity android:name=".Diet_Plan_Wrkout"-->
-            <!--android:theme="@style/MyMaterialTheme"></activity>-->
+        <!-- Edit Profile -->
+        <activity
+            android:name=".edit_profile"
+            android:theme="@style/MyMaterialTheme" />
+        <!-- Workout Session -->
+        <activity
+            android:name=".workout_session"
+            android:theme="@style/MyMaterialTheme" />
+        <!-- &lt;!&ndash;Record Session&ndash;&gt; -->
+        <!-- <activity android:name=".Record_Wrkout" -->
+        <!-- android:theme="@style/MyMaterialTheme"></activity> -->
+        <!-- &lt;!&ndash;Past Sessions&ndash;&gt; -->
+        <!-- <activity android:name=".Past_Wrkout" -->
+        <!-- android:theme="@style/MyMaterialTheme"></activity> -->
+        <!-- &lt;!&ndash;Add Workout Session&ndash;&gt; -->
+        <!-- <activity android:name=".Add_Wrkout" -->
+        <!-- android:theme="@style/MyMaterialTheme"></activity> -->
+        <!-- &lt;!&ndash;Diet Planning&ndash;&gt; -->
+        <!-- <activity android:name=".Diet_Plan_Wrkout" -->
+        <!-- android:theme="@style/MyMaterialTheme"></activity> -->
     </application>
 
 </manifest>

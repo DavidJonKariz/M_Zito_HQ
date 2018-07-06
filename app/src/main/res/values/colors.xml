@@ -28,4 +28,7 @@
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
+
+    <!--Register Connection Validation Extra-->
+    <color name="textInputErrorColor">#ff3737</color>
 </resources>

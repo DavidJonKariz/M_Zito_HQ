@@ -17,10 +17,10 @@ public class workout_session extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int[] tabIcons = {
-            R.drawable.icon_3_add,
-            R.drawable.icon_4_breakfast,
+            R.drawable.icon_3_add1p,
+            R.drawable.icon_4_breakfastc,
             R.drawable.icon_6_weight,
-            R.drawable.icon_5_record
+            R.drawable.icon_5_record4p
     };
 
     @Override

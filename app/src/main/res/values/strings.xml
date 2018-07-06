@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">M-Zito HQ</string>
     <string name="loginbtn">LOGIN</string>
@@ -15,6 +16,8 @@
     <string name="login_enter_your_name">Enter Your Username or Email</string>
     <string name="login_enter_your_password">Enter Your Password</string>
     <string name="login_btn">LOGIN</string>
+    <string name="not_yet_registered">Already Registered?</string>
+    <string name="already_signed">Not Yet Registered?</string>
 
     <!--CardView-->
     <string name="backdrop_subtitle">UserName</string>
@@ -34,4 +37,23 @@
     <string name="gym_instructors">Gym Instructors</string>
     <string name="diet_plan">Diet Plan</string>
     <string name="past_workouts">Past Workouts</string>
+    <!--Basic Info-->
+    <string name="female_gender">Female</string>
+    <string name="male_gender" translatable="false">Male</string>
+    <!--Dreams-->
+    <string name="goal_weight">Weight Goals</string>
+    <string name="current_weight">Current Weight</string>
+
+    <!--Wokouts-->
+    <string name="workout_add_statement">Add</string>
+    <string name="workout_diet_statement">Diet Plan</string>
+    <string name="workout_past_statement">Past Workouts</string>
+    <string name="workout_record_statement">Record Session</string>
+    <string name="landing_record_session">Record Session</string>
+    <string name="landing_gym_location">Gym Location</string>
+    <string name="landing_gym_trainer">Gym Trainer</string>
+    <string name="landing_diet_plan">Diet Plan</string>
+    <string name="landing_past_workouts">Past Workouts</string>
+    <string name="landing_add_workouts">Add Workouts</string>
+    <string name="settings_language">Language</string>
 </resources>

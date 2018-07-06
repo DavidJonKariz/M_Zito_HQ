@@ -22,4 +22,10 @@
         android:title="@string/menu_goals"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_language"
+        android:orderInCategory="103"
+        android:title="@string/settings_language"
+        app:showAsAction="never" />
+
 </menu>
